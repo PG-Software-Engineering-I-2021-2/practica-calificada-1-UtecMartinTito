@@ -1,13 +1,14 @@
 package com.example.demo.practica01;
 
-import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
+import org.testng.Assert;
+import org.testng.annotations.Test;
 
-@SpringBootTest
-class ApplicationTests {
+
+public class ApplicationTests {
 
 	@Test
-	void contextLoads() {
+	public void main() {
+		Application.main(new String[0]);
+		Assert.assertTrue(true);
 	}
-
 }
